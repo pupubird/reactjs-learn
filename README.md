@@ -52,7 +52,6 @@ Example:
 
 ![result](learning-assets/children-result.PNG)
 
-Here, title  is the custom property (prop ) set up on the custom Post  component. We basically replicate the default HTML attribute behavior we already know (e.g. `<input type="text">`  informs the browser about how to handle that input).
 
 Post Component:
 
@@ -63,6 +62,8 @@ Post Component:
             `</div>`
         );
     }
+
+Here, title  is the custom property (prop ) set up on the custom Post  component. We basically replicate the default HTML attribute behavior we already know (e.g. `<input type="text">`  informs the browser about how to handle that input).
 
 The Post  component receives the props  argument. You can of course name this argument whatever you want - it's your function definition, React doesn't care! But React will pass one argument to your component function => An object, which contains all properties you set up on `<Post ... />` .
 
