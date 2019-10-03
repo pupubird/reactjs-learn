@@ -3,19 +3,32 @@ import './App.css';
 import Person from './Person/Person';
 
 class App extends Component {
-  render() {
-    //jsx syntatic sugar
-    // return (
-    //   <div className="App">
-    //     <Person />
-    //     <h1> Hi, I'm a react apppppp</h1>
-    //   </div>
-    // );
+  state = {
+    persons: [
+      {
+        name: 'max',
+        age: 28
+      },
+      {
+        name: 'manu',
+        age: 29
+      },
+      {
+        name: 'rain',
+        age: 30
+      }
+    ]
+  }
 
-    //it then compile to the code below
-    return React.createElement('div', { className: 'App' },
-      React.createElement('Person', null, null),
-      React.createElement('h1', null, 'Hi, I am a react appppp')
+  render() {
+    return (
+      <div className="App">
+        <Person name={this.state.persons[0].name} age={this.state.persons[0].age}>My hobby is: racing
+        </Person>
+        <Person name={this.state.persons[1].name} age={this.state.persons[1].age}></Person>
+        <Person name={this.state.persons[2].name} age={this.state.persons[1].age}></Person>
+        <button>Switch Name</button>
+      </div>
     );
   }
 }
