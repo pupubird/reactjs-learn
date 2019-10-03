@@ -290,6 +290,6 @@ Hence, we shall be using this.setState() instead of directly manipulate the stat
 
 Class-based State Manipulation:
 
-[state manipulation](learning-assets/state-manipulation.PNG)
+![state manipulation](learning-assets/state-manipulation.PNG)
 
 Function-based State Manipulation:
