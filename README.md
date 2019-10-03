@@ -281,3 +281,15 @@ Event names:
 
     onToggle
 
+## State & Props Manipulation
+
+Based on [Understanding ReactJS — setState](https://medium.com/@baphemot/understanding-reactjs-setstate-a4640451865b) by Bartosz Szczeciński:
+
+    ...While it is technically possible to alter state by writing to this.state directly, it will not lead to the Component re-rendering with new data, and generally lead to state inconsistency.
+Hence, we shall be using this.setState() instead of directly manipulate the state data.
+
+Class-based State Manipulation:
+
+[state manipulation](learning-assets/state-manipulation.PNG)
+
+Function-based State Manipulation:

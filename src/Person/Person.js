@@ -4,7 +4,7 @@ const person = (props) => {
     return (
         <div>
             <p> I am {props.name} and
-            {Math.floor(Math.random() * 30)} years old</p>
+            {props.age} years old</p>
             <p>{props.children}</p>
         </div>
     )

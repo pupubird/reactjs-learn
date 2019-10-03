@@ -21,7 +21,15 @@ class App extends Component {
   }
 
   buttonHandle = () => {
-    console.log('aa')
+    // dont manipulate like this: this.state.persons[0].name = 'PUPUBIRD';
+    //use this.setState()
+    this.setState({
+      persons: [
+        { name: "pupubird", age: 10 },
+        { name: 'manu', age: 11 },
+        { name: 'pikupoku', age: 90 }
+      ]
+    });
   }
 
   render() {
