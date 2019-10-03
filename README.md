@@ -10,7 +10,7 @@ _159,748 students enrolled_
 
 1. [Setup](#setup)
 
-## Setup <a name="setup></a>
+## Setup <a name="setup"></a>
 
 [Install create-react-app](https://github.com/facebook/create-react-app)
 
