@@ -20,6 +20,10 @@ class App extends Component {
     ]
   }
 
+  buttonHandle = () => {
+    console.log('aa')
+  }
+
   render() {
     return (
       <div className="App">
@@ -27,7 +31,7 @@ class App extends Component {
         </Person>
         <Person name={this.state.persons[1].name} age={this.state.persons[1].age}></Person>
         <Person name={this.state.persons[2].name} age={this.state.persons[1].age}></Person>
-        <button>Switch Name</button>
+        <button onClick={this.buttonHandle}>Switch Name</button>
       </div>
     );
   }
