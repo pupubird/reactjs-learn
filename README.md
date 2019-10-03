@@ -25,12 +25,17 @@ A typical React app therefore could be depicted as a component tree - having one
 Each component needs to return/ render some JSX code - it defines which HTML code React should render to the real DOM in the end.
 
 JSX is NOT HTML but it looks a lot like it. Differences can be seen when looking closely though (for example className in JSX vs class in "normal HTML"). JSX is just syntactic sugar for JavaScript, allowing you to write HTMLish code instead of nested React.createElement(...) calls.
+
 ![jsx-show](learning-assets/jsx.PNG)
+
 When creating components, you have the choice between two different ways:
 
 Functional components (also referred to as "presentational", "dumb" or "stateless" components - more about this later in the course) => const cmp = () => { return `<div>`some JSX`</div>` } (using ES6 arrow functions as shown here is recommended but optional)
+
 ![function based components](learning-assets/function-based-component.PNG)
+
 class-based components (also referred to as "containers", "smart" or "stateful" components) => class Cmp extends Component { render () { return `<div>`some JSX`</div>` } }  
+
 ![class based components](learning-assets/class-based-component.PNG)
 
 ## Props & State <a name="props&state"></a>
@@ -44,6 +49,8 @@ props allow you to pass data from a parent (wrapping) component to a child (embe
 Example:
 
 ![props](learning-assets/props.PNG)
+
+![result](learning-assets/children-result.PNG)
 
 Here, title  is the custom property (prop ) set up on the custom Post  component. We basically replicate the default HTML attribute behavior we already know (e.g. `<input type="text">`  informs the browser about how to handle that input).
 
