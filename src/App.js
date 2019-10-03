@@ -15,7 +15,7 @@ class App extends Component {
     //it then compile to the code below
     return React.createElement('div', { className: 'App' },
       React.createElement('Person', null, null),
-      React, createElement('h1', null, 'Hi, I am a react appppp')
+      React.createElement('h1', null, 'Hi, I am a react appppp')
     );
   }
 }
