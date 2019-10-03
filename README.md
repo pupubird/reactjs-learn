@@ -95,7 +95,7 @@ state  simply is a property of the component class, you have to call it state  t
 
 Whenever state  changes (taught over the next lectures), the component will re-render and reflect the new state. The difference to props  is, that this happens within one and the same component - you don't receive new data (props ) from outside!
 
-## Event Handler <a name="event-handler></a>
+## Event Handler <a name="event-handler"></a>
 
 ### To Which Events Can You Listen?
 
