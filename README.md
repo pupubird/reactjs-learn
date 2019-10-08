@@ -319,7 +319,7 @@ To pass param together with the callbacks, use bind()
 
 ![bind](learning-assets/bind.png)
 
-To get two way binding:
+To get two way binding (binding from view to controller):
 
 ![two way binding1](learning-assets/binding-twoway.png)
 
