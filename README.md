@@ -12,7 +12,6 @@ _159,748 students enrolled_
 2. [Components & JSX](#Components-&-JSX)
 3. [Props & state](#props&state)
 4. [Event hander](#event-handler)
-5. [State & Props Manipulation](#state-props-manipulation)
 
 ## Setup <a name="setup"></a>
 
@@ -290,11 +289,6 @@ Hence, we shall be using this.setState() instead of directly manipulate the stat
 
 Class-based State Manipulation:
 
-![state manipulation](learning-assets/state-manipulation.PNG)
+[state manipulation](learning-assets/state-manipulation.PNG)
 
 Function-based State Manipulation:
-
-In function based state manipulation, because we have no this.setState(), hence we need to import useState (a react hook function) for state manipulation.
-Below is an example:
-
-![function state manipultion](learning-assets/function-state-manipulation.PNG)
