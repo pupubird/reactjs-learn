@@ -289,13 +289,13 @@ Based on [Understanding ReactJS — setState](https://medium.com/@baphemot/under
     it will not lead to the Component re-rendering with new data, 
     and generally lead to state inconsistency.
 
-Hence, we shall be using this.setState() instead of directly manipulate the state data.
+Hence, we shall be using **this.setState()** instead of directly manipulate the state data.
 
-Class-based State Manipulation:
+**Class-based State Manipulation:**
 
 ![state manipulation](learning-assets/state-manipulation.PNG)
 
-Function-based State Manipulation:
+**Function-based State Manipulation:**
 
 in function based manipulation, there is no setState() function, hence we will need to import useState (a react hook function) to replace it.
 
@@ -305,7 +305,7 @@ in function based manipulation, there is no setState() function, hence we will n
 
 ## Passing Method between Components & Binding <a name="pass-method-binding"></a>
 
-To pass a callback function between components:
+**To pass a callback function between components:**
 
 First calling it using props.[method name]
 ![passing method](learning-assets/passing-attr-diff-file-1.png)
@@ -314,4 +314,21 @@ Secondly add it in the origin file
 ![passing method2](learning-assets/passing-attr-diff-file-2.png)
 
 To pass param together with the callbacks, use bind()
+
+    function.bind(thisArg[, arg1[, arg2[, ...]]])
+
 ![bind](learning-assets/bind.png)
+
+To get two way binding:
+
+![two way binding1](learning-assets/binding-twoway.png)
+
+then
+
+![two way binding2](learning-assets/binding-twoway2.png)
+
+the results will be
+
+![two way binding result1](learning-assets/binding-twoway-result1.PNG)
+
+![two way binding result2](learning-assets/binding-twoway-result2.PNG)
