@@ -13,6 +13,7 @@ _159,748 students enrolled_
 3. [Props & state](#props&state)
 4. [Event hander](#event-handler)
 5. [State & Props Manipulation](#state-props-manipulation)
+6. [Passing Method between Components & Binding](#pass-method-binding)
 
 ## Setup <a name="setup"></a>
 
@@ -301,3 +302,16 @@ in function based manipulation, there is no setState() function, hence we will n
     useState() return a list [state, setState].
 
 ![function state manipulation](learning-assets/function-state-manipulation.PNG)
+
+## Passing Method between Components & Binding <a name="pass-method-binding"></a>
+
+To pass a callback function between components:
+
+First calling it using props.[method name]
+![passing method](learning-assets/passing-attr-diff-file-1.png)
+
+Secondly add it in the origin file
+![passing method2](learning-assets/passing-attr-diff-file-2.png)
+
+To pass param together with the callbacks, use bind()
+![bind](learning-assets/bind.png)
