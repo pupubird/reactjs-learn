@@ -12,6 +12,7 @@ _159,748 students enrolled_
 2. [Components & JSX](#Components-&-JSX)
 3. [Props & state](#props&state)
 4. [Event hander](#event-handler)
+5. [State & Props Manipulation](#state-props-manipulation)
 
 ## Setup <a name="setup"></a>
 
@@ -95,11 +96,9 @@ state  simply is a property of the component class, you have to call it state  t
 
 Whenever state  changes (taught over the next lectures), the component will re-render and reflect the new state. The difference to props  is, that this happens within one and the same component - you don't receive new data (props ) from outside!
 
-## Event Handler <a name="event-handler></a>
+## Event Handler <a name="event-handler"></a>
 
 ### To Which Events Can You Listen?
-
-You can find a list of supported events [here](https://reactjs.org/docs/events.html#supported-events)
 
 ### Clipboard Events
 
@@ -281,15 +280,21 @@ Event names:
 
     onToggle
 
-## State & Props Manipulation
+## State & Props Manipulation <a name="state-props-manipulation"></a>
 
 Based on [Understanding ReactJS — setState](https://medium.com/@baphemot/understanding-reactjs-setstate-a4640451865b) by Bartosz Szczeciński:
 
     ...While it is technically possible to alter state by writing to this.state directly, it will not lead to the Component re-rendering with new data, and generally lead to state inconsistency.
+
 Hence, we shall be using this.setState() instead of directly manipulate the state data.
 
 Class-based State Manipulation:
 
-[state manipulation](learning-assets/state-manipulation.PNG)
+![state manipulation](learning-assets/state-manipulation.PNG)
 
 Function-based State Manipulation:
+
+In function based state manipulation, because we have no this.setState(), hence we need to import useState (a react hook function) for state manipulation.
+Below is an example:
+
+![function state manipultion](learning-assets/function-state-manipulation.PNG)
