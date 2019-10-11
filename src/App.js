@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Person from './Person/Person';
 
@@ -48,7 +48,6 @@ class App extends Component {
         <Person
           name={this.state.persons[0].name}
           age={this.state.persons[0].age}
-          click={this.buttonHandle}
           changed={this.nameChangedHandler}>
           My hobby is: racing
         </Person>
