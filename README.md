@@ -331,6 +331,8 @@ the results will be
 
 ![two way binding result1](learning-assets/binding-twoway-result1.PNG)
 
+then
+
 ![two way binding result2](learning-assets/binding-twoway-result2.PNG)
 
 Now, we will be able to do two way binding -> stateful bind to stateless componenets, and stateless bind to stateful componenets.

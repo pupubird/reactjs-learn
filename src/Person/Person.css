@@ -1,0 +1,19 @@
+*{
+    box-sizing: content-box;
+}
+.Person{
+    margin:auto;
+    margin-bottom: 20px;
+    width:80vw;
+    min-height:100px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 3px #ccc;
+    padding:16px;
+    text-align: center;
+}
+input{
+    padding:16px;
+    border:none;
+    background-color: rgb(231, 231, 231);
+    border-radius: 16px;
+}
